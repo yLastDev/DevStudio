@@ -1,0 +1,383 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}
+
+body {
+  background-color: #171321;
+  color: white;
+  /* background-color: #003049; */
+}
+.darkMode {
+  background-color: lightgray;
+  color: black;
+}
+/* navbar */
+
+.toggler-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 10px;
+}
+.toggler-container p {
+  padding-right: 5px;
+  margin: 0;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 30px auto;
+  align-items: center;
+  /* background-color: #171321; */
+  z-index: 2;
+  width: 100%;
+  height: 55px;
+
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    rgba(255, 0, 191, 1) 0%,
+    rgba(249, 255, 9, 1) 39%,
+    rgba(0, 245, 255, 1) 100%
+  );
+  border-image-slice: 1;
+}
+
+.fa-navicon {
+  grid-column: 1;
+  margin-left: 5px;
+}
+.navbar h1 {
+  display: none;
+  grid-column: 2;
+  font-size: 25px;
+  text-align: center;
+  /* color: white; */
+}
+
+.ham_links li {
+  list-style: none;
+}
+
+.social_network {
+  text-align: end;
+  margin-right: 10px;
+}
+.social_network a {
+  padding-left: 0.8em;
+  color: white;
+  font-size: 1.6em;
+}
+
+/* cart nav */
+.sidenav {
+  position: absolute;
+  z-index: 3;
+  height: 100%;
+  width: 0;
+
+  top: 55px;
+  left: 0;
+  background-color: rgba(33, 30, 40, 0.95);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.sidenav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #c91515;
+}
+.closebtnhead {
+  margin-top: 15px;
+  margin-left: 3px;
+  justify-content: end;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #d9e0ed;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  width: 70vw;
+  top: 50px;
+}
+
+.motto {
+  top: 0;
+  font-size: 2.3em;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 50px;
+}
+.motto h2 {
+  background: -webkit-linear-gradient(
+    0deg,
+    rgb(1, 89, 160) 20%,
+    rgb(140, 155, 74) 45%,
+    rgb(1, 89, 160) 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo {
+  position: absolute;
+  top: -12px;
+  margin-left: -13px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.descriptionContainer {
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.closeButtonContainer {
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  align-self: flex-end;
+  top: 0;
+}
+/* #powershell {
+  position: absolute;
+  top: 2vw;
+  font-size: 1.2em;
+  padding-left: 5px;
+  margin: 0;
+} */
+#descriptionTxt {
+  width: 100%;
+  padding-left: 0;
+  font-size: 0.8em;
+
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: Consolas, "courier new";
+  text-align: center;
+  position: absolute;
+  text-align: left;
+  top: 5vw;
+  /****************/
+  white-space: pre-wrap;
+  color: #b9cedaee;
+}
+
+section {
+  margin-top: 50px;
+}
+.portofolioTitle,
+.aboutMeTitle,
+.contactMeTitle {
+  text-align: center;
+  /* color: rgb(140, 155, 74); */
+  /* color: rgb(58, 116, 125); */
+  color: rgb(0, 101, 153);
+  font-size: 2em;
+  font-weight: bolder;
+
+  /* font-family: "Bungee Inline"; */
+  font-family: "Iceland";
+}
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.aboutMeTitle {
+  text-align: center;
+  font-size: 1.75em;
+  padding: 0;
+}
+.aboutMeCard {
+  width: 285px;
+  height: 387px;
+  /* background-color: red; */
+  /* box-shadow: 5px 5px 5px gray; */
+  box-shadow: rgba(110, 110, 110, 0.3) 0px 19px 38px,
+    rgba(165, 154, 154, 0.22) 0px 15px 12px;
+  opacity: 0.7;
+}
+.aboutMeCard:hover {
+  opacity: 1;
+}
+.aboutMeCard p {
+  text-align: center;
+  font-size: large;
+}
+.aboutMeTxt {
+  /* background-color: rgb(1, 36, 86); */
+  background-color: lightgray;
+  color: black;
+  width: 80%;
+  border-radius: 0 10px 10px 10px;
+  padding: 0 10px 0 10px;
+  border: 1px solid black;
+  /* border-radius: 10px; */
+}
+.contactMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.personalContact {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contactMeContainer {
+  display: flex;
+  justify-content: center;
+}
+.contactMeContainer form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.contactMeContainer form input:not(:last-child),
+textarea {
+  background-color: rgb(1, 89, 160);
+  margin-bottom: 15px;
+}
+.contactMeContainer form input:not(:last-child)::placeholder,
+textarea::placeholder {
+  color: darkgray;
+}
+.contactMeContainer input:last-child {
+  width: 200px;
+  align-self: center;
+}
+
+footer {
+  width: 100%;
+  margin-top: 50px;
+  border-top: 1px solid red;
+}
+
+.footer-container {
+  width: 100%;
+  color: white;
+}
+.social_links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.social_links li {
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.social_links a {
+  color: #d9e0ed;
+  text-decoration: none;
+}
+.footer-container i {
+  margin: 5px 0 0 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 1440px;
+  }
+  .social_network {
+    display: none;
+  }
+  .navbar {
+    grid-template-columns: 250px auto;
+  }
+
+  .fa-navicon {
+    display: none;
+  }
+
+  .navbar h1 {
+    display: block;
+    grid-column: 1;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    height: 50% !important;
+    text-align: left;
+  }
+  .menu {
+    display: block;
+    grid-column: 2;
+    padding-right: 10px;
+  }
+  .nav_links {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+  }
+
+  .nav_links a {
+    padding-left: 1vw;
+
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+  }
+  .nav_links a:active {
+    color: blue;
+  }
+  .nav_links a:hover {
+    text-decoration: underline;
+  }
+  #descriptionTxt {
+    /* font-size: 1.5em; */
+    font-size: 1.3em;
+    top: 60px;
+  }
+  .aboutMeContainer {
+    flex-direction: row;
+  }
+  .aboutMeTxt {
+    width: 400px;
+    border-radius: 10px 10px 10px 0;
+    align-self: flex-start;
+  }
+
+  .contactMeContainer form {
+    width: 700px;
+  }
+}

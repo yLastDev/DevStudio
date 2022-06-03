@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/0203513253.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Bungee Inline"
+      rel="stylesheet"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/mainstyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/cardstyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+    <link rel="stylesheet" type="text/css" href="css/toggler.css" />
+    <link rel="stylesheet" type="text/css" href="css/typewriter.css" />
+    <script src="scripts/sidecartnav.js"></script>
+
+    <title>Iulian Developer Studio</title>
+    <link rel="icon" type="image/x-icon" href="/images/cartoonme.png">
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="navbar">
+          <i
+            class="fa fa-navicon"
+            onclick="toggleNav()"
+            style="font-size: 24px; color: white"
+          ></i>
+          <h1>Iulian Developer Studio</h1>
+
+          <div class="menu">
+            <ul class="nav_links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#portof">Portofolio</a></li>
+              <li><a href="#aboutM">About Me</a></li>
+              <li><a href="#contactM">Contact</a></li>
+            </ul>
+          </div>
+          <div class="social_network">
+            <a class="fa-brands fa-linkedin"></a>
+            <a class="fa-brands fa-github"></a>
+            <a class="fa-brands fa-twitter-square"></a>
+          </div>
+
+          <div id="mySideNav" class="sidenav">
+            <div class="ham_menu">
+              <ul class="ham_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#portof">Portofolio</a></li>
+                <li><a href="#aboutM">aboutMe</a></li>
+                <li><a href="#contactM">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="toggler-container">
+        <p>Nightmode</p>
+        <label class="switch">
+          <input
+            type="checkbox"
+            checked
+            onclick="nightMode()"
+            id="nightmode_toggler"
+          />
+          <span class="toggler round"></span>
+        </label>
+      </div>
+      <main>
+        <div class="intro">
+          <div class="logo">
+            <img src="images/cartoonme.png" />
+          </div>
+
+          <div class="motto">
+            <h2>WEB <br />through the end</h2>
+          </div>
+        </div>
+        <!-- <div class="slidecontainer">
+          <p>Slide to reveal</p>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="5"
+            class="slider"
+            id="myRange"
+          />
+        </div> -->
+
+        <div class="descriptionContainer">
+          <img src="/images/powershell3.jpg" width="100%" />
+          <div class="closeButtonContainer" onclick="closeWindow()"></div>
+          <!-- <p id="powershell"> Windows Powershell</p> -->
+          <p id="descriptionTxt"></p>
+        </div>
+      </main>
+
+      <section class="portofolio" id="portof">
+        <div class="portofolioTitle">
+          <h2>Check my work</h2>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img src="images/bmwm3.jpeg" alt="cars" />
+            <div class="text-container">
+              <h4><b>CARS HEAVEN</b></h4>
+              <p>CSS based project</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/crypto.jpg" alt="crypto" />
+            <div class="text-container">
+              <h4><b>Modern Currency</b></h4>
+              <p>React based project</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/crysis3.jpg" alt="gaming" />
+            <div class="text-container">
+              <h4><b>Gaming Arena</b></h4>
+              <p>Javascript based project</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/pcbmodern.jpg" alt="Avatar" />
+            <div class="text-container">
+              <h4><b>Microchips and electronic</b></h4>
+              <p>Framework based project</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aboutMe" id="aboutM">
+        <div class="aboutMeTitle"><h2>About Me</h2></div>
+        <div class="aboutMeContainer">
+          <div class="aboutMeCard">
+            <img
+              src="./images/aboutMePhoto3.jpg"
+              width="285px"
+              height="280px"
+            />
+            <p>
+              Iulian Bolea <br />
+              "I do things properly"
+            </p>
+          </div>
+          <div class="aboutMeTxt">
+            <p>
+              &emsp; Hello, my name is Iulian and welcome to my territory. I`m pleasant
+              to share with you my frontend development portofolio. I want to
+              grow and leave a mark on my/our projects. I want to hear your
+              opinion and feel free to visit all my creations. </br>
+              &emsp;I`m also a mechatronic enginner and I know how things really work so we can create everything that is possible.</br>
+              For exemple, in 2018 I belonged to a team who created a line-follower robot, for a thematic contest, coded directly from a phone with Arduino(C++ similar language). 
+              Portability changed the odds in our favor. </br>&emsp;I enjoy the process of this carrer.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contactMe" id="contactM">
+        <div class="contactMeTitle"><h2>Contact</h2></div>
+        <div class="personalContact"><strong>Telephone: +40777777777</br>Email: lastdevonline@gmail.com</br>or type under</strong></div>
+        <div class="contactMeContainer">
+          <form action="action_page.php">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Type your NAME here..."
+            />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Type your @EMAIL here..."
+            />
+
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <ul class="social_links">
+            <li><a href="#" class="fa-brands fa-linkedin"> </a></li>
+            <li><a href="#" class="fa-brands fa-github"> </a></li>
+            <li>
+              <a href="#" class="fa-brands fa-twitter-square"> </a>
+            </li>
+            <li>
+              <a href="#" class="fa-brands fa-instagram-square"></a>
+            </li>
+          </ul>
+          <i>&#169; Iulian Developer Studio 2022</i>
+        </div>
+        <div></div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="scripts/smallscripts.js"></script>
+  <!-- <script src="scripts/slidetoreveal.js"></script> -->
+</html>
