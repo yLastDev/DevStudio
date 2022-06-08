@@ -48,4 +48,8 @@ const closeWindow = () => {
   const window = document.querySelector(".descriptionContainer");
   window.style.display = "none";
 };
-document.addEventListener("keypress", closeWindow);
+document.addEventListener("keypress", function (x) {
+  if (x.key === "x" || x.key === "X") {
+    closeWindow();
+  }
+});
