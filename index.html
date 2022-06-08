@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/css" href="css/toggler.css" />
     <link rel="stylesheet" type="text/css" href="css/typewriter.css" />
     <script src="scripts/sidecartnav.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="scripts/sendmail.js"></script>
 
     <title>Iulian Developer Studio</title>
     <link rel="icon" type="image/x-icon" href="/images/cartoonme.png">
@@ -165,7 +167,7 @@
         <div class="contactMeTitle"><h2>Contact</h2></div>
         <div class="personalContact"><strong>Telephone: +40777777777</br>Email: lastdevonline@gmail.com</br>or type under</strong></div>
         <div class="contactMeContainer">
-          <form action="action_page.php">
+          <form onsubmit="sendEmail(); reset(); return false;">
             <input
               type="text"
               id="fname"
