@@ -16,10 +16,7 @@ body {
   color: white;
   /* background-color: #003049; */
 }
-.darkMode {
-  background-color: lightgray;
-  color: black;
-}
+
 /* navbar */
 
 .toggler-container {
@@ -134,7 +131,7 @@ main {
 .motto h2 {
   background: -webkit-linear-gradient(
     0deg,
-    rgb(1, 89, 160) 20%,
+    rgb(1, 88, 160) 20%,
     rgb(140, 155, 74) 45%,
     rgb(1, 89, 160) 90%
   );
@@ -254,10 +251,21 @@ section {
   flex-direction: column;
   justify-content: center;
 }
-
+.contactWrap {
+  background-color: lightgray;
+  padding: 10px 10px 10px 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  align-self: center;
+  border-radius: 10px;
+}
 .personalContact {
   text-align: center;
   margin-bottom: 20px;
+  color: black;
 }
 .contactMeContainer {
   display: flex;
@@ -266,21 +274,22 @@ section {
 .contactMeContainer form {
   display: flex;
   flex-direction: column;
-  width: 70%;
 }
 
 .contactMeContainer form input:not(:last-child),
 textarea {
-  background-color: rgb(1, 89, 160);
+  background-color: lightgray;
   margin-bottom: 15px;
+  border-radius: 7px;
 }
 .contactMeContainer form input:not(:last-child)::placeholder,
 textarea::placeholder {
-  color: darkgray;
+  color: black;
 }
 .contactMeContainer input:last-child {
-  width: 200px;
+  width: 150px;
   align-self: center;
+  border-radius: 7px;
 }
 
 footer {

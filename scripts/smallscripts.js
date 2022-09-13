@@ -13,9 +13,13 @@
 // };
 
 //nightmode/darkmode/lightmode
-const nightMode = () => {
+
+let nightMode = () => {
   const bodyStyle = document.body;
+  const cardOpac = document.getElementsByClassName("card");
   bodyStyle.classList.toggle("darkMode");
+
+  cardOpac.setAttribute("style", "opacity:1");
 };
 
 //typing effect with js
