@@ -57,3 +57,9 @@ document.addEventListener("keypress", function (x) {
     closeWindow();
   }
 });
+
+//alert when click cant pass card
+
+const cantPassClick = () => {
+  alert("This project is not uploaded yet");
+};
